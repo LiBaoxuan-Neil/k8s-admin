@@ -42,6 +42,7 @@ web/.cache/
 web/.temp/
 web/.env.local
 web/.env.*.local
+web/.idea/
 
 # Root-level node (if any)
 node_modules/
