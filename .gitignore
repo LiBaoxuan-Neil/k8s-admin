@@ -1,0 +1,70 @@
+# OS
+.DS_Store
+.DS_Store?
+Thumbs.db
+ehthumbs.db
+
+# IDE / Editor
+.idea
+.vscode
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.swp
+*.swo
+*~
+
+# Go
+*.exe
+*.exe~
+*.dll
+*.so
+*.dylib
+/vendor/
+*.test
+*.out
+go.work
+go.work.sum
+
+# Go build output
+k8s-admin.exe
+/release/
+/dist/
+
+# Frontend (web/)
+web/node_modules/
+web/dist/
+web/npm-debug.log*
+web/yarn-debug.log*
+web/yarn-error.log*
+web/.cache/
+web/.temp/
+web/.env.local
+web/.env.*.local
+
+# Root-level node (if any)
+node_modules/
+
+# Logs & debug
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+*.log
+logs/
+
+# Test / coverage
+tests/**/coverage/
+*.cover
+coverage.out
+coverage.html
+
+# Local / sensitive config (uncomment if config contains secrets)
+# config.yaml
+.kube/
+
+# Lock files (uncomment to track for reproducible builds)
+# package-lock.json
+package-lock.json
+yarn.lock
+pnpm-lock.yaml
