@@ -17,7 +17,8 @@ func Routers(frontendFS fs.FS) *gin.Engine {
 	apiGroup := r.Group("/api")
 	exampleRouterGroup := router.RouterGroupApp.ExampleRouterGroup
 	exampleRouterGroup.InitExampleRouter(apiGroup)
-
+	k8sRouterGroup := router.RouterGroupApp.K8sRouterGroup
+	k8sRouterGroup.Init(apiGroup)
 	// 嵌入的前端静态资源 + SPA 回退
 	MountFrontend(r, frontendFS)
 
